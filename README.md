@@ -10,3 +10,26 @@ The inputs to the perceptron are matrices, say x1, x2, x3, x4 of same size and e
 When we combine multiple perceptrons, we get Dense layer. It becomes a feed forward artificial neural network.
 A single layer perceptron is a logistic regression function dealing with single dimension.
 With MLP (multiple layer perceptron) have multiple dense layer. With each layer, we can extract multiple features based on the inputs enhancing the accuracy as we go through more layers.
+
+In this project, I am using CNN - convolutional neural network which is a deep learning model used widely for image processing and pattern recognition. It, by virtue,detects features like shape, edges, textures, etc from an image using convolutional layers.
+
+Convolution filter(kernel) is a small matrix (e.g. 3x5,5x5 ) used to extract features from input image. It slides over the image and performs element-wise multiplication followed by summation, highlighting important patterns like edges, corners, textures. An edge detection filter/matrix will look like:
+[ -1 -1 -1 ]
+[ -1  8 -1 ]
+[ -1 -1 -1 ]
+Applying this to image detects sharp transitions in pixel intensity.
+
+A **Pooling Layer** is used to reduce the spatial size of feature maps while retaining essential information.
+**Max Pooling** selects the max value
+**Average Pooling** computes the average of all values in the window
+
+**Max Pooling** is a down sampling operation that reduces the size of the feature map while keeping important information. It slides a small window (2x2) over the feature map and selects the max value in that window.
+
+Feature Map:  After 2x2 max pooling: 
+[ 1 3 2 1]  -> [ 4 6 ]
+[ 4 2 0 6]     [ 9 8 ]
+[ 5 1 7 4]
+[ 2 9 8 3]
+This reduces computation and prevents overfitting while preserving important details.
+
+**Padding** is the addition of extra pixels around an image before applying a convolution operation. It helps control the output size and preserves imp edge information.
