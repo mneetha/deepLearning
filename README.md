@@ -33,3 +33,13 @@ Feature Map:  After 2x2 max pooling:
 This reduces computation and prevents overfitting while preserving important details.
 
 **Padding** is the addition of extra pixels around an image before applying a convolution operation. It helps control the output size and preserves imp edge information.
+
+
+**Transfer Learning**
+Transfer learning is a technique in deep learning where a pre trained model is used as a starting point for a new task. Instead of training a neural network from scratch, we take an existing model and fine-tune it for a specific task, saving time and resources. Common transfer learning models are ** VGG, ResNet, MobileNet, Inception **
+
+The CNN architecture comprises of:
+1. Convolution Layer -> extracts features using filters/kernels
+2. Activation function (ReLU) -> Introduces non-linearity
+3. Pooling Layer -> Downsamples feature maps to reduce dimensions
+4. Fully Connected Layer -> Makes final predictions
