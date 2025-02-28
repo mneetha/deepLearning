@@ -171,7 +171,7 @@ def extract_cash_disburse_data(text):
 def extract_bank_reconcile_data(text):
     print(text)
     lines = text.split("\n")
-    
+
         # get reconciliation summary
 
 def filter_financial_values_from_pdf(pdf_paths):
